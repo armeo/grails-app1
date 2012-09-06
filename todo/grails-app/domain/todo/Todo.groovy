@@ -8,5 +8,9 @@ class Todo {
 	String description
 
     static constraints = {
+    	subject(blank:false, unique:true)
+    	dueDate()
+    	priority()
+    	description(size:0..100)
     }
 }
