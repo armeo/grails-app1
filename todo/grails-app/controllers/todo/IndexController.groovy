@@ -2,5 +2,7 @@ package todo
 
 class IndexController {
 
-    def index() { }
+    def index() { 
+    	render 'Hello Grails !!'
+    }
 }
