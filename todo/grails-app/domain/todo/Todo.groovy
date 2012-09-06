@@ -10,7 +10,7 @@ class Todo {
     static constraints = {
     	subject(blank:false, unique:true)
     	dueDate()
-    	priority()
+    	priority(nullable:true)
     	description(size:0..100)
     }
 }

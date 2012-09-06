@@ -18,12 +18,12 @@
 	<g:datePicker name="dueDate" precision="day"  value="${todoInstance?.dueDate}"  />
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: todoInstance, field: 'priority', 'error')} required">
+<div class="fieldcontain ${hasErrors(bean: todoInstance, field: 'priority', 'error')} ">
 	<label for="priority">
 		<g:message code="todo.priority.label" default="Priority" />
-		<span class="required-indicator">*</span>
+		
 	</label>
-	<g:field name="priority" type="number" value="${todoInstance.priority}" required=""/>
+	<g:field name="priority" type="number" value="${todoInstance.priority}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: todoInstance, field: 'description', 'error')} ">
